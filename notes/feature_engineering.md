@@ -1,12 +1,12 @@
 ## Feature Engineering Course Notes
 
 
-### I. Baseline Model
+### I. [Baseline Model](https://www.kaggle.com/matleonard/baseline-model)
 
 - Prepare categorical variables: LabelEncoder()
 - Create training, validation, and test splits
 
-### II. Categorical Encodings
+### II. [Categorical Encodings](https://www.kaggle.com/matleonard/categorical-encodings)
 
 One-hot encoding, label encoding
 
@@ -19,7 +19,7 @@ One-hot encoding, label encoding
 - Similar to target encoing in that it's based  on the target probability
 - target probability is only based on rows before it.
 
-## III. Feature Generation
+## III. [Feature Generation](https://www.kaggle.com/matleonard/feature-generation)
 
 ### Interactions
 
@@ -31,7 +31,9 @@ Create new features by combining categorical variables. e.g. Country=CA, 'Music'
 - Helps to contain outliers
 - Tree based models are scale invariant
 
-## IV. Univariate Feature Selection
+## IV. [Feature Selection](https://www.kaggle.com/matleonard/feature-selection)
+
+Univariate Feature Selection
 
 The simplest fastest moethods are based on univariate statistical tests.
 
