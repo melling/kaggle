@@ -26,6 +26,10 @@ import category_encoders as ce
 
 - replace a categorical value with the average value of the target for the value of the feature. e.g. Give CA, replace avg outcome with .28
 
+Target encoding attempts to measure the population mean of the target for each level in a categorical feature. This means when there is less data per level, the estimated mean will be further away from the "true" mean, there will be more variance. There is little data per IP address so it's likely that the estimates are much noisier than for the other features. The model will rely heavily on this feature since it is extremely predictive. This causes it to make fewer splits on other features, and those features are fit on just the errors left over accounting for IP address. So, the model will perform very poorly when seeing new IP addresses that weren't in the training data (which is likely most new data). Going forward, we'll leave out the IP feature when trying different encodings.
+
+
+
 #### CatBoost Encoding
 
 - Similar to target encoing in that it's based  on the target probability
