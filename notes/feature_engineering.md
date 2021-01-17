@@ -11,13 +11,20 @@
 One-hot encoding, label encoding
 
 #### Count Encoding
+
 - Replace each categorical value with the number of times it appears in a data set. e.g. GB occurs 10 times, replace GB with 10
 
 Why is count encoding effective?
 
 Rare values tend to have similar counts (with values like 1 or 2), so you can classify rare values together at prediction time. Common values with large counts are unlikely to have the same exact count as other values. So, the common/important values get their own grouping
 
-**Target Encoding** - replace a categorical value with the average value of the target for the value of the feature. e.g. Give CA, replace avg outcome with .28
+```python
+import category_encoders as ce
+````
+
+#### Target Encoding
+
+- replace a categorical value with the average value of the target for the value of the feature. e.g. Give CA, replace avg outcome with .28
 
 #### CatBoost Encoding
 
