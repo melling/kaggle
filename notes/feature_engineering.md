@@ -47,6 +47,17 @@ Create new features by combining categorical variables. e.g. Country=CA, 'Music'
 - Helps to contain outliers
 - Tree based models are scale invariant
 
+#### Pandas Time Series
+
+```python
+# Numbers events in last 6 hours
+
+def count_past_events(series):
+    series = pd.Series(series.index, index=series)
+    past_events = series.rolling('6h').count()-1
+    return past_events
+```
+
 ## IV. [Feature Selection](https://www.kaggle.com/matleonard/feature-selection)
 
 ### Univariate Feature Selection
