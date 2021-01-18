@@ -72,6 +72,8 @@ scikit-learn module: feature_selection.SelectKBest # 3 different scoring functio
 
 F-value measures the linear dependency between featues and target. The score might underestimate the relationship if it's non-linear.
 
+"To find the best value of K, you can fit multiple models with increasing values of K, then choose the smallest K with validation score above some threshold or some other criteria. A good way to do this is loop over values of K and record the validation scores for each iteration."
+
 ### L1 Regularization (LASSO)
 
 As the strength of regularization increases, features which are less important for predicting the target are set to zero.
