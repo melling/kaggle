@@ -2,6 +2,8 @@
 
 Starting my journy with Kaggle
 
+My course [notes](notes)
+
 ## Beginners
 
 - [Approaching (Almost) Any Machine Learning Problem](https://www.linkedin.com/pulse/approaching-almost-any-machine-learning-problem-abhishek-thakur/)
