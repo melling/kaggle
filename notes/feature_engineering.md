@@ -60,9 +60,11 @@ def count_past_events(series):
 
 ## IV. [Feature Selection](https://www.kaggle.com/matleonard/feature-selection)
 
+Perform feature selection on the train set only, then use the results there to remove features from the validation and test sets.
+
 ### Univariate Feature Selection
 
-The simplest fastest moethods are based on univariate statistical tests.
+The simplest fastest methods are based on univariate statistical tests.
 
 For each feature, measure how strongly the target depends on the feature using a statistical test like Chi-Squared or ANOVA.
 
@@ -70,7 +72,7 @@ scikit-learn module: feature_selection.SelectKBest # 3 different scoring functio
 
 F-value measures the linear dependency between featues and target. The score might underestimate the relationship if it's non-linear.
 
-### L1 Regularizatin (LASSO)
+### L1 Regularization (LASSO)
 
 As the strength of regularization increases, features which are less important for predicting the target are set to zero.
 ### Misc Notes
