@@ -77,6 +77,26 @@ F-value measures the linear dependency between featues and target. The score mig
 ### L1 Regularization (LASSO)
 
 As the strength of regularization increases, features which are less important for predicting the target are set to zero.
+
+"In general, feature selection with L1 regularization is more powerful the univariate tests, but it can also be very slow when you have a lot of data and a lot of features. Univariate tests will be much faster on large datasets, but also will likely perform worse."
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.feature_selection import SelectFromModel
+
+train, valid, _ = get_data_splits(baseline_data)
+
+X, y = train[train.columns.drop("outcome")], train['outcome']
+
+# Set the regularization parameter C=1
+logistic = LogisticRegression(C=1, penalty="l1", solver='liblinear', random_state=7).fit(X, y)
+model = SelectFromModel(logistic, prefit=True)
+
+X_new = model.transform(X)
+X_new
+```
+
 ### Misc Notes
 
-Rare values tend to have similar counts (with values like 1 or 2), so you can classify rare values together at prediction time. Common values with large counts are unlikely to have the same exact count as other values. So, the common/important values get their own grouping.
+"Rare values tend to have similar counts (with values like 1 or 2), so you can classify rare values together at prediction time. Common values with large counts are unlikely to have the same exact count as other values. So, the common/important values get their own grouping."
+
