@@ -1,0 +1,55 @@
+---
+title: "Getting Started with ggplot2"
+
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## References
+
+- [ggplot2 - 3rd edition](https://ggplot2-book.org/index.html)
+- [Python GoG - Plotnine](https://datascienceworkshops.com/blog/plotnine-grammar-of-graphics-for-python/)
+
+```{r}
+library(ggplot2)
+mpg
+```
+
+```{r}
+data(package = 'ggplot2')
+```
+
+## Scatter Plots
+
+### References
+
+- https://ggplot2-book.org/getting-started.html
+
+1. data
+2. aesthetic mappings: aes()
+3. layers: geom_
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy)) + 
+  geom_point() # layers begin with geom_
+```
+
+First two params default to names x,y
+```{r}
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point()
+```
+
+### Add Regression Lines
+
+## Box Plots
+
+
+## Density Plots
+
+
+## Violin Plots
+
