@@ -9,8 +9,8 @@ First thing I would recommend is doing a few of the Kaggle Courses
 
 If you're learning Python, there are lots of resources on the Internet but these two Kaggle courses with get you started
 
--[Python](https://www.kaggle.com/learn/python)
--[Pandas](https://www.kaggle.com/learn/pandas)
+- [Python](https://www.kaggle.com/learn/python)
+- [Pandas](https://www.kaggle.com/learn/pandas)
 
 ## Exporatory Data Analysis - EDA
 
@@ -33,7 +33,7 @@ All of these notebooks will:
 
 Spend a few minutes looking at previous discussions on the competition.
 
-https://www.kaggle.com/c/jane-street-market-prediction/discussion
+https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion
 
 Sort by Recent or Votes then skip through the headlines.  If you run into a problem later, the answer may be in a previous discussion.
 
