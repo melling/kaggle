@@ -1,0 +1,25 @@
+{
+    "id": "77B40458",
+    "path": "~/Dropbox/dev/kaggle/Tabular_Playground_2021/tabular_baseline.R",
+    "project_path": "tabular_baseline.R",
+    "type": "r_source",
+    "hash": "2342222367",
+    "contents": "",
+    "dirty": false,
+    "created": 1609960500924.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "cursorPosition": "12,75",
+        "scrollLine": "0",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1609971713,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1609971713596,
+    "read_only": false,
+    "read_only_alternatives": []
+}

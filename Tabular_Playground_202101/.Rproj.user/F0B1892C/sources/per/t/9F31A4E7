@@ -1,0 +1,30 @@
+{
+    "id": "9F31A4E7",
+    "path": "~/Dropbox/dev/kaggle/Tabular_Playground_2021/Tabular_EDA.Rmd",
+    "project_path": "Tabular_EDA.Rmd",
+    "type": "r_markdown",
+    "hash": "1079708002",
+    "contents": "",
+    "dirty": false,
+    "created": 1610735842409.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "9,0",
+        "scrollLine": "0",
+        "Source": "Source",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "124:77.77777862548828"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1611167749,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1611167749879,
+    "read_only": false,
+    "read_only_alternatives": []
+}

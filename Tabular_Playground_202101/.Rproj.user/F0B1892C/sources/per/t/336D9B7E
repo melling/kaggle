@@ -1,0 +1,26 @@
+{
+    "id": "336D9B7E",
+    "path": "~/Dropbox/dev/kaggle/Tabular_Playground_2021/titanic.R",
+    "project_path": "titanic.R",
+    "type": "r_source",
+    "hash": "73489810",
+    "contents": "",
+    "dirty": false,
+    "created": 1610058423368.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "10,27",
+        "scrollLine": "0",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1610059013,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1610059013660,
+    "read_only": false,
+    "read_only_alternatives": []
+}
