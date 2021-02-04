@@ -1,6 +1,6 @@
 # Kaggle
 
-Starting my journy with Kaggle
+Starting my journey with Kaggle
 
 My course [notes](notes)
 
