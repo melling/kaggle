@@ -18,6 +18,10 @@ My course [notes](notes)
 - https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f
 
 
+## Misc
+
+- https://github.com/aaronwangy/Data-Science-Cheatsheet
+
 ## Books
 
 - ISLR
