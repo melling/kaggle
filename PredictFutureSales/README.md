@@ -1,6 +1,8 @@
 
 # https://www.kaggle.com/c/competitive-data-science-predict-future-sales
 
+Shops with [English Names](shops_eng.csv)
+
 ## EDA Notebooks
 
 - https://www.kaggle.com/kmezhoud/ggplot-eda
