@@ -16,10 +16,10 @@ library(lubridate)
 
 # 2.Data preparation/Cleaning data
 # 2.1 Check all related datasets structure
-head(item)
-head(item_cat)
-head(test)
-head(shop)
+# head(item)
+# head(item_cat)
+# head(test)
+# head(shop)
 
 # 2.2 Merge the above 4 datasets
 data1 = inner_join(train, shop, by = "shop_id")

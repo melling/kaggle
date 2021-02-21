@@ -7,7 +7,8 @@ import numpy as np
 
 items = pd.read_csv(r'../input/items.csv')
 items_category = pd.read_csv(r'../input/item_categories.csv')
-shops = pd.read_csv(r'../input/shops.csv')
+# shops = pd.read_csv(r'../input/shops.csv')
+shops = pd.read_csv(r'shops_eng.csv')
 sales_train = pd.read_csv(r'../input/sales_train.csv')
 test = pd.read_csv(r'../input/test.csv')
 

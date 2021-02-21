@@ -1,0 +1,61 @@
+shop_name,shop_id,shops_english,town,region
+!Якутск Орджоникидзе, 56 фран,0,!Akutsk Ordjonikidze, 56 fran,!Akutsk,Sakha
+!Якутск ТЦ "Центральный" фран,1,!Akutsk TZ "Zentral_nyj" fran,!Akutsk,Sakha
+Адыгея ТЦ "Мега",2,Adygea TZ "Mega",Adygea,Adygea
+Балашиха ТРК "Октябрь-Киномир",3,Balasiha TRK "Oktabr_-Kinomir",Balasiha,Moscow
+Волжский ТЦ "Волга Молл",4,Voljskij TZ "Volga Moll",Voljskij,Volgograd
+Вологда ТРЦ "Мармелад",5,Vologda TRZ "Marmelad",Vologda,Vologda
+Воронеж (Плехановская, 13),6,Voronej (Plehanovskaa, 13),Voronej,voronezh
+Воронеж ТРЦ "Максимир",7,Voronej TRZ "Maksimir",Voronej,voronezh
+Воронеж ТРЦ Сити-Парк "Град",8,Voronej TRZ Siti-Park "Grad",Voronej,voronezh
+Выездная Торговля,9,Vyezdnaa Torgovla,Vyezdnaa,Vyezdnaa
+Жуковский ул. Чкалова 39м?,10,Jukovskij ul. Ckalova 39m?,Jukovskij,Moscow
+Жуковский ул. Чкалова 39м²,11,Jukovskij ul. Ckalova 39mÂ²,Jukovskij,Moscow
+Интернет-магазин ЧС,12,Internet-magazin CS,Internet-magazin,Internet
+Казань ТЦ "Бехетле",13,Kazan_ TZ "Behetle",Kazan_,tatarstan
+Казань ТЦ "ПаркХаус" II,14,Kazan_ TZ "ParkHaus" II,Kazan_,tatarstan
+Калуга ТРЦ "XXI век",15,Kaluga TRZ "XXI vek",Kaluga,Kaluga
+Коломна ТЦ "Рио",16,Kolomna TZ "Rio",Kolomna,Moscow
+Красноярск ТЦ "Взлетка Плаза",17,Krasnoarsk TZ "Vzletka Plaza",Krasnoarsk,Moscow
+Красноярск ТЦ "Июнь",18,Krasnoarsk TZ "Iun_",Krasnoarsk,Moscow
+Курск ТЦ "Пушкинский",19,Kursk TZ "Puskinskij",Kursk,Kursk
+Москва "Распродажа",20,Moskva "Rasprodaja",Moskva,Moscow
+Москва МТРЦ "Афи Молл",21,Moskva MTRZ "Afi Moll",Moskva,Moscow
+Москва Магазин С21,22,Moskva Magazin S21,Moskva,Moscow
+Москва ТК "Буденовский" (пав.А2),23,Moskva TK "Budenovskij" (pav.A2),Moskva,Moscow
+Москва ТК "Буденовский" (пав.К7),24,Moskva TK "Budenovskij" (pav.K7),Moskva,Moscow
+Москва ТРК "Атриум",25,Moskva TRK "Atrium",Moskva,Moscow
+Москва ТЦ "Ареал" (Беляево),26,Moskva TZ "Areal" (Belaevo),Moskva,Moscow
+Москва ТЦ "МЕГА Белая Дача II",27,Moskva TZ "MEGA Belaa Daca II",Moskva,Moscow
+Москва ТЦ "МЕГА Теплый Стан" II,28,Moskva TZ "MEGA Teplyj Stan" II,Moskva,Moscow
+Москва ТЦ "Новый век" (Новокосино),29,Moskva TZ "Novyj vek" (Novokosino),Moskva,Moscow
+Москва ТЦ "Перловский",30,Moskva TZ "Perlovskij",Moskva,Moscow
+Москва ТЦ "Семеновский",31,Moskva TZ "Semenovskij",Moskva,Moscow
+Москва ТЦ "Серебряный Дом",32,Moskva TZ "Serebranyj Dom",Moskva,Moscow
+Мытищи ТРК "XL-3",33,Mytisi TRK "XL-3",Mytisi,Moscow
+Н.Новгород ТРЦ "РИО",34,N.Novgorod TRZ "RIO",N.Novgorod,novgorod
+Н.Новгород ТРЦ "Фантастика",35,N.Novgorod TRZ "Fantastika",N.Novgorod,novgorod
+Новосибирск ТРЦ "Галерея Новосибирск",36,Novosibirsk TRZ "Galerea Novosibirsk",Novosibirsk,novosibirsk
+Новосибирск ТЦ "Мега",37,Novosibirsk TZ "Mega",Novosibirsk,novosibirsk
+Омск ТЦ "Мега",38,Omsk TZ "Mega",Omsk,omsk
+РостовНаДону ТРК "Мегацентр Горизонт",39,RostovNaDonu TRK "Megazentr Gorizont",RostovNaDonu,rostov
+РостовНаДону ТРК "Мегацентр Горизонт" Островной,40,RostovNaDonu TRK "Megazentr Gorizont" Ostrovnoj,RostovNaDonu,rostov
+РостовНаДону ТЦ "Мега",41,RostovNaDonu TZ "Mega",RostovNaDonu,rostov
+СПб ТК "Невский Центр",42,SPb TK "Nevskij Zentr",SPb,Saint Peterburg
+СПб ТК "Сенная",43,SPb TK "Sennaa",SPb,Saint Peterburg
+Самара ТЦ "Мелодия",44,Samara TZ "Melodia",Samara,samara
+Самара ТЦ "ПаркХаус",45,Samara TZ "ParkHaus",Samara,samara
+Сергиев Посад ТЦ "7Я",46,Sergiev Posad TZ "7A",Sergiev,moscow
+Сургут ТРЦ "Сити Молл",47,Surgut TRZ "Siti Moll",Surgut,Khanty-Mansi
+Томск ТРЦ "Изумрудный Город",48,Tomsk TRZ "Izumrudnyj Gorod",Tomsk,Tomsk
+Тюмень ТРЦ "Кристалл",49,Tumen_ TRZ "Kristall",Tumen_,Tyumen
+Тюмень ТЦ "Гудвин",50,Tumen_ TZ "Gudvin",Tumen_,tyumen
+Тюмень ТЦ "Зеленый Берег",51,Tumen_ TZ "Zelenyj Bereg",Tumen_,tyumen
+Уфа ТК "Центральный",52,Ufa TK "Zentral_nyj",Ufa,Bashkortostan
+Уфа ТЦ "Семья" 2,53,Ufa TZ "Sem_a" 2,Ufa,Bashkortostan
+Химки ТЦ "Мега",54,Himki TZ "Mega",Himki,moscow
+Цифровой склад 1С-Онлайн,55,Zifrovoj sklad 1S-Onlajn,Zifrovoj,zifrovoj
+Чехов ТРЦ "Карнавал",56,Cehov TRZ "Karnaval",Cehov,moscow
+Якутск Орджоникидзе, 56,57,Akutsk Ordjonikidze, 56,Akutsk,sakha
+Якутск ТЦ "Центральный",58,Akutsk TZ "Zentral_nyj",Akutsk,sakha
+Ярославль ТЦ "Альтаир",59,Aroslavl_ TZ "Al_tair",Aroslavl_,yaroslavl
