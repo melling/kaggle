@@ -26,5 +26,6 @@ My course [notes](notes)
 
 ## Books
 
-- ISLR
+- [ISLR](http://StatLearning.com)
 - [Mathematics for Machine Learning](https://mml-book.github.io)
+- [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
