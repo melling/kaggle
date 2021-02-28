@@ -8,17 +8,17 @@ https://www.kaggle.com/c/nlp-getting-started/overview
 
 This competition runs indefinitely with a  [rolling leaderboard](https://www.kaggle.com/c/titanic/discussion/6240)  which invalidates entries after two months.
 
-[NLP Getting Started Tutorial | Kaggle](https://www.kaggle.com/philculliton/nlp-getting-started-tutorial)
-
-BERT
+Recommended Quick Tutorial: [NLP Getting Started Tutorial | Kaggle](https://www.kaggle.com/philculliton/nlp-getting-started-tutorial)
 
 ## Data: 1.36MB
+
+https://www.kaggle.com/c/nlp-getting-started/data
 
 - sample submission file. You input should be in the same format
 - train.csv - build and fit your model
 - test.csv
-  - create predictions for this file. Then submit on Kaggle
-  - Has a public and private score component. Private is hidden until contest is over.
+  - create predictions for this file. Then [submit on Kaggle](https://www.kaggle.com/c/nlp-getting-started/submit)
+  - Has a [public and private score](https://www.kaggle.com/c/nlp-getting-started/leaderboard) component. Private is hidden until contest is over.
 
 ## Scoring
 
@@ -41,14 +41,15 @@ Missing Data
 Are all values Normally Distributed ?
   Features and Target
 
-Feature Engineering
+## Feature Engineering
+
+- https://www.kaggle.com/navneetkr123/nlp-feature-engineering-beginners
 
 ## Discussions
 
 ## Browse Notebooks
 
-Search for 
-  “Score:”, “Score: 0.8”
+Search for “Score:”, “Score: 0.8”
 
 Can sort by best Score
 
