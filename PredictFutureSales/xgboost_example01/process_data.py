@@ -30,7 +30,7 @@ items = pd.read_csv('../input/items.csv')
 shops = pd.read_csv('../input/shops.csv')
 cats = pd.read_csv('../input/item_categories.csv')
 train = pd.read_csv('../input/sales_train.csv')
-# set index to ID to avoid droping it later
+# set index to ID to avoid dropping it later
 test = pd.read_csv('../input/test.csv').set_index('ID')
 
 # Plot Outliers
@@ -53,6 +53,7 @@ train = train[train.item_cnt_day < 1001]
 
 median = train[(train.shop_id == 32) & (train.item_id == 2973) & (
     train.date_block_num == 4) & (train.item_price > 0)].item_price.median()
+
 train.loc[train.item_price < 0, 'item_price'] = median
 
 # Several shops are duplicates of each other (according to its name). Fix train and test set.
@@ -165,13 +166,13 @@ time.time() - ts
 # Target lags
 
 
-def lag_feature(df, lags, col):
+def lag_feature(df, lag_list, col):
     tmp = df[['date_block_num', 'shop_id', 'item_id', col]]
-    for i in lags:
+    for j in lag_list:
         shifted = tmp.copy()
         shifted.columns = ['date_block_num',
-                           'shop_id', 'item_id', col+'_lag_'+str(i)]
-        shifted['date_block_num'] += i
+                           'shop_id', 'item_id', col +'_lag_' + str(j)]
+        shifted['date_block_num'] += j
         df = pd.merge(df, shifted, on=[
                       'date_block_num', 'shop_id', 'item_id'], how='left')
     return df
@@ -375,10 +376,10 @@ for i in lags:
          matrix['item_avg_item_price']) / matrix['item_avg_item_price']
 
 
-def select_trend(row):
-    for i in lags:
-        if row['delta_price_lag_'+str(i)]:
-            return row['delta_price_lag_'+str(i)]
+def select_trend(row_data):
+    for j in lags:
+        if row_data['delta_price_lag_'+str(j)]:
+            return row_data['delta_price_lag_' + str(j)]
     return 0
 
 
@@ -511,7 +512,7 @@ ts = time.time()
 def fill_na(df):
     for col in df.columns:
         if ('_lag_' in col) & (df[col].isnull().any()):
-            if ('item_cnt' in col):
+            if 'item_cnt' in col:
                 df[col].fillna(0, inplace=True)
     return df
 
@@ -521,7 +522,7 @@ time.time() - ts
 print(f"{time.time() - ts}")
 
 # #Out[36]:
-matrix.columns
+# matrix.columns
 
 # #Out[37]:
 matrix.info()
