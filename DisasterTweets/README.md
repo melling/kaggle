@@ -44,6 +44,7 @@ Are all values Normally Distributed ?
 ## Feature Engineering
 
 - https://www.kaggle.com/navneetkr123/nlp-feature-engineering-beginners
+- https://www.kaggle.com/sandeep545/0-80163-naive-bayes-with-feature-engineering
 
 ## Discussions
 
