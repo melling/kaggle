@@ -65,22 +65,25 @@ Look for **less code** at first to make it easier to learn.
 - Submit
 
 ### Bert Starter
-Votes: 14
-https://www.kaggle.com/user123454321/bert-starter
-Public Score: 0.83665
-914.5 seconds - 15.23 minutes
-Accelerator:  GPU
+
+- Votes: 14
+- https://www.kaggle.com/user123454321/bert-starter
+- Public Score: 0.83665
+- 914.5 seconds - 15.23 minutes
+- Accelerator:  GPU
 
 ### Disaster NLP: Keras BERT using TFHub
-Votes: 271
-https://www.kaggle.com/xhlulu/disaster-nlp-keras-bert-using-tfhub
-Public Score: 0.83573
-1328.1 seconds - 22 minutes 
-Accelerator:  GPU
+
+- Votes: 271
+- https://www.kaggle.com/xhlulu/disaster-nlp-keras-bert-using-tfhub
+- Public Score: 0.83573
+- 1328.1 seconds - 22 minutes 
+- Accelerator:  GPU
 
 ### LSTM_Baseline
-Votes: 17
-https://www.kaggle.com/bibek777/lstm-baseline
-Public Score: 0.82224
-124.9 seconds
-Accelerator: GPU
+
+- Votes: 17
+- https://www.kaggle.com/bibek777/lstm-baseline
+- Public Score: 0.82224
+- 124.9 seconds
+- Accelerator: GPU
