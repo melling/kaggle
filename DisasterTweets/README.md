@@ -61,7 +61,7 @@ Look for **less code** at first to make it easier to learn.
 
 ## Potential Starter Notebooks
 
-- Clone Notebook
+- Clone Notebook with "Copy and Edit"
 - Run
 - Submit
 
