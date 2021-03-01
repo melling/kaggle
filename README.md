@@ -29,6 +29,7 @@ My course [notes](notes)
 - http://math.mit.edu/~gs/linearalgebra/
 - [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 - https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm
+- http://immersivemath.com/ila/index.html
 
 ## Books
 
