@@ -31,6 +31,10 @@ My course [notes](notes)
 - https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm
 - http://immersivemath.com/ila/index.html
 
+## Probability and Statistics
+
+- http://www.randomservices.org/random/
+
 ## Books
 
 - [ISLR](http://StatLearning.com)
