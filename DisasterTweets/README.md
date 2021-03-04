@@ -88,3 +88,12 @@ Look for **less code** at first to make it easier to learn.
 - Public Score: 0.82224
 - 124.9 seconds
 - Accelerator: GPU
+
+### Quick and simple disaster tweet classification
+
+- Votes 1
+- https://www.kaggle.com/andriik86/quick-and-simple-disaster-tweet-classification/
+- Public Score: 0.80171
+- 61 seconds
+- Accelerator: None
+- 
