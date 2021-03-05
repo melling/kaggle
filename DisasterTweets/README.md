@@ -41,6 +41,9 @@ Missing Data
 Are all values Normally Distributed ?
   Features and Target
 
+- https://www.kaggle.com/barun2104/nlp-with-disaster-eda-dfm-svd-ensemble
+
+
 ## Feature Engineering
 
 - https://www.kaggle.com/navneetkr123/nlp-feature-engineering-beginners
