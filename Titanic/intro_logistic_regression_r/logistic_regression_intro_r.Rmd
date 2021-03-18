@@ -1,0 +1,210 @@
+---
+title: "An Introduction to Logistic Regression in R"
+output:
+  html_document:
+    toc: true
+    depth: 2    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The goal is to introduce logistic regression in R by solving the Kaggle Titanic Survivor competition.
+
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse) # A lot of magic in here
+library(GGally)
+
+```
+
+# Read the training data
+
+```{r}
+train <- read_csv("../input/train.csv")
+```
+# Read test data
+
+```{r}
+test <- read_csv("../input/test.csv")
+```
+
+# Remove a few columns to simplify
+```{r}
+train <- select(train, -c("Name", "Ticket", "Cabin", "Embarked", "Fare")) # Tidyverse
+test <- select(test, -c("Name", "Ticket", "Cabin", "Embarked", "Fare")) # Tidyverse
+
+```
+
+# Convert Survived and Sex to Factors
+
+In our data, sex is only one of 2 values ('Male', 'Female'), so we treat it differently
+
+Survived is on true or false, so we also treat it differently.
+
+Igore the defaults for now.  
+
+```{r}
+train$Survived <- as_factor(train$Survived) # Only provided in training data
+#contrasts(train$Survived)
+table(train$Survived)
+```
+
+```{r}
+train$Sex <- as_factor(train$Sex)
+test$Sex <- as_factor(test$Sex)
+
+contrasts(train$Sex)
+```
+# Handle Missing Data
+
+
+
+## Skim Train
+
+Using the skim() function, we can see that the only missing data is Age, where 177 ages  are missing in the training data.
+```{r}
+library(skimr)
+skim(train)
+```
+## Skim Test
+
+In the test data, we are missing 86 ages.  We will also replace those with the average.
+
+```{r}
+skim(test)
+```
+Combine train and test data
+```{r}
+df = bind_rows(train, test)
+```
+
+# Get Average Age
+```{r}
+avg_age <-  mean(df$Age, na.rm=TRUE)
+avg_age
+```
+```{r}
+sum(is.na(train$Age))
+```
+
+# Replace Missing Ages with Mean
+```{r}
+#train[is.na(train$Age)] <-  avg_age
+#train %>% replace_na(avg_age)
+#replace_na(train, list(Age=avg_age))
+train[is.na(train$Age), "Age"] <- avg_age
+test[is.na(test$Age), "Age"] <- avg_age
+```
+
+# Verify Age was set
+
+```{r}
+sum(is.na(train$Age))
+```
+
+
+# Correlation Plot
+
+```{r}
+ggpairs(train, binwidth=30)
+```
+
+# Base Accuracy
+
+In our training data, only 342 survived.
+
+```{r}
+table(train$Survived)
+```
+
+
+# Fit the model using all the parameters/features
+```{r}
+lr.fit = glm(Survived ~ ., data = train, family = binomial)
+summary(lr.fit)
+```
+# Predict
+
+```{r}
+p = predict(lr.fit, type = "response")
+```
+
+
+# Confusion Matrix
+
+```{r}
+table(train$Survived, p >= 0.5)
+```
+True negative, False Positive
+False negative, True Positive
+
+Abbreviated like this in matrix form
+
+TN FP
+FN TP
+
+## Accuracy
+
+Accuracy is the percentage that the model got right: TN + TP divided by the total
+
+```{r}
+accuracy = (242 + 460) / nrow(train)
+accuracy
+```
+## Sensitivity
+
+Sensitivity is the true positives divided by all the positives.
+
+The formula: $Sensitivity = \frac{TP}{TP + FP}$
+
+```{r}
+sensitivity = 242 / (242 + 100)
+sensitivity
+```
+
+
+## Specificity
+
+Specificity is the true negatives divide by all the negatives.
+
+The formula: $Specificity = \frac{TN}{TN + FN}$
+
+```{r}
+specificity = 460 / (460 + 89)
+specificity
+```
+
+# Predict our Test Data
+
+Now we will take the model and use it to predict who survives in the test data.
+
+```{r}
+lr.fit.probs = predict(lr.fit, test, type = "response")
+```
+
+
+Add the column to the test data.
+```{r}
+test$Survived = ifelse(lr.fit.probs > 0.5, 1, 0)
+
+table(test$Survived)
+```
+
+We predict only 163 people will survive.
+
+# Generate Kaggle Submission File
+
+```{r}
+test %>% 
+  select(PassengerId, Survived) %>%
+  write.csv("intro_lr_submission.csv", quote = FALSE, row.names = FALSE)
+```
+
+This gives a Kaggle score of 0.74880
+
+# References
+
+- https://www.kaggle.com/jeremyd/titanic-logistic-regression-in-r
+- 
