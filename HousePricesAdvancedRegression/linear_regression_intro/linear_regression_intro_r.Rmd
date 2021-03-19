@@ -5,7 +5,7 @@ output:
     toc: true
     depth: 2    
 ---
-[ML Intro Home](../index.html)
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -18,6 +18,10 @@ The goal is to introduce linear regression in R by solving the Kaggle [Ames Hous
 Don't expect a great score.  There's a lot more to learn but this blog will take you from zero to submission.
 
 Simple linear regression only uses one variable/predictor/feature to make a prediction.  In our case, the feature is the ground living area: **GrLivArea**.  We chose this parameter by reading this [document](http://jse.amstat.org/v19n3/decock.pdf).
+
+The R code can be found on [Github](https://github.com/melling/kaggle/tree/main/HousePricesAdvancedRegression/linear_regression_intro)
+
+# Load a couple libraries
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse) # A lot of magic in here
@@ -36,12 +40,14 @@ train <- read_csv("../input/train.csv")
 ```{r}
 test <- read_csv("../input/test.csv")
 ```
+# Keep only a subset of the data
 
 ```{r}
 train <- select(train, c("Id", "GrLivArea", "LotArea", "TotalBsmtSF", "YearBuilt", "SalePrice")) # Tidyverse
 test <- select(test, c("Id", "GrLivArea", "LotArea", "TotalBsmtSF", "YearBuilt")) # Tidyverse
 ```
 
+# Correlation Plot
 ```{r}
 ggpairs(train, binwidth=30)
 ```
