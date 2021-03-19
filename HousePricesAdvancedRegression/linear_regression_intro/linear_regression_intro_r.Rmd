@@ -1,0 +1,86 @@
+---
+title: "An Introduction to Simple Linear Regression in R"
+output:
+  html_document:
+    toc: true
+    depth: 2    
+---
+[ML Intro Home](../index.html)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+The goal is to introduce linear regression in R by solving the Kaggle [Ames Housing competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).
+
+Don't expect a great score.  There's a lot more to learn but this blog will take you from zero to submission.
+
+Simple linear regression only uses one variable/predictor/feature to make a prediction.  In our case, the feature is the ground living area: **GrLivArea**.  We chose this parameter by reading this [document](http://jse.amstat.org/v19n3/decock.pdf).
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse) # A lot of magic in here
+library(GGally)
+```
+
+
+# Read the training data
+
+```{r}
+train <- read_csv("../input/train.csv")
+```
+
+# Read test data
+
+```{r}
+test <- read_csv("../input/test.csv")
+```
+
+```{r}
+train <- select(train, c("Id", "GrLivArea", "LotArea", "TotalBsmtSF", "YearBuilt", "SalePrice")) # Tidyverse
+test <- select(test, c("Id", "GrLivArea", "LotArea", "TotalBsmtSF", "YearBuilt")) # Tidyverse
+```
+
+```{r}
+ggpairs(train, binwidth=30)
+```
+
+# Fit the Linear Model
+
+```{r}
+lm.fit = lm(SalePrice ~ GrLivArea, data = train)
+```
+
+# Model Summary
+
+```{r}
+summary(lm.fit)
+```
+The coefficient for GrLivArea is 107.130 and the p-value is 2e-16, which means it is significant.  
+
+# Plot the Regression Line
+
+```{r}
+attach(train)
+{plot(GrLivArea, SalePrice) # Plot points
+abline(lm.fit) # Add Least Squares Regression Line
+}
+```
+
+# Predict SalePrice in Test Data
+```{r}
+predSalePrice = predict(lm.fit, newdata = test)
+test$SalePrice = predSalePrice
+```
+
+
+# Generate Kaggle Submission File
+
+```{r}
+test %>% 
+  select(Id, SalePrice) %>%
+  write.csv("intro_lr_submission.csv", quote = FALSE, row.names = FALSE)
+```
+
+The Kaggle Score: 0.29117

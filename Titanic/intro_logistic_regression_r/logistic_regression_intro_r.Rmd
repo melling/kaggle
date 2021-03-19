@@ -10,8 +10,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The goal is to introduce logistic regression in R by solving the Kaggle Titanic Survivor competition.
+# Introduction
 
+The goal is to introduce logistic regression in R by solving the Kaggle [Titanic Survivor competition](https://www.kaggle.com/c/titanic).
+
+Don't expect a great score.  There's a lot more to learn but this blog will take you from zero to submission.
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse) # A lot of magic in here
@@ -39,16 +42,23 @@ test <- select(test, -c("Name", "Ticket", "Cabin", "Embarked", "Fare")) # Tidyve
 
 # Convert Survived and Sex to Factors
 
-In our data, sex is only one of 2 values ('Male', 'Female'), so we treat it differently
+Categorical variables are converted to factors in R.
 
-Survived is on true or false, so we also treat it differently.
+In our data, sex is only one of 2 values ('Male', 'Female'), so we treat it differently.  They are categories.
 
-Igore the defaults for now.  
+Survived is only 1 or 0, so we also treat it differently. It's also a category variable.
+
+Ignore the details for now. We're only learning enough to get us to the first submission.
 
 ```{r}
 train$Survived <- as_factor(train$Survived) # Only provided in training data
 #contrasts(train$Survived)
 table(train$Survived)
+```
+## Convert Sex to Factor
+
+```{r}
+table(train$Sex)
 ```
 
 ```{r}
@@ -57,6 +67,14 @@ test$Sex <- as_factor(test$Sex)
 
 contrasts(train$Sex)
 ```
+
+```{r}
+table(train$Survived)
+```
+```{r}
+table(train$Sex)
+```
+
 # Handle Missing Data
 
 
@@ -89,7 +107,7 @@ avg_age
 sum(is.na(train$Age))
 ```
 
-# Replace Missing Ages with Mean
+# Replace Missing Ages with the Mean
 ```{r}
 #train[is.na(train$Age)] <-  avg_age
 #train %>% replace_na(avg_age)
@@ -100,12 +118,16 @@ test[is.na(test$Age), "Age"] <- avg_age
 
 # Verify Age was set
 
+We should now get zero rows with na.
+
 ```{r}
 sum(is.na(train$Age))
 ```
 
 
 # Correlation Plot
+
+We won't look at this now, but a correlation pairs plot can be useful when investigating if data is related.
 
 ```{r}
 ggpairs(train, binwidth=30)
@@ -121,10 +143,16 @@ table(train$Survived)
 
 
 # Fit the model using all the parameters/features
+
 ```{r}
 lr.fit = glm(Survived ~ ., data = train, family = binomial)
+```
+
+# Summary of the Model
+```{r}
 summary(lr.fit)
 ```
+
 # Predict
 
 ```{r}
@@ -135,19 +163,28 @@ p = predict(lr.fit, type = "response")
 # Confusion Matrix
 
 ```{r}
-table(train$Survived, p >= 0.5)
+table(train$Survived, p > 0.5)
+```
 ```
 True negative, False Positive
 False negative, True Positive
+```
 
-Abbreviated like this in matrix form
-
+Abbreviated like this in matrix form:
+```
 TN FP
 FN TP
+```
 
 ## Accuracy
 
 Accuracy is the percentage that the model got right: TN + TP divided by the total
+
+The formula: $Accuracy = \frac{TN + TP}{n}$
+
+```{r}
+
+```
 
 ```{r}
 accuracy = (242 + 460) / nrow(train)
@@ -202,9 +239,9 @@ test %>%
   write.csv("intro_lr_submission.csv", quote = FALSE, row.names = FALSE)
 ```
 
-This gives a Kaggle score of 0.74880
+The intro submission gives a Kaggle score of 0.74880
 
 # References
 
 - https://www.kaggle.com/jeremyd/titanic-logistic-regression-in-r
-- 
+- [Factors in R](https://www.youtube.com/watch?v=DWgsyr1CIVU)
