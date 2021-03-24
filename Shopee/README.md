@@ -14,7 +14,8 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 # Notebooks Studied
 
-|Notebook | Score | Runtime |
-| --- | --- | --- | --- |
-| [EDA One Stop](nb_OneStop.md) |
+| Notebook | Score | Runtime |
+| --- | --- | --- | 
+| [EDA One Stop](nb_OneStop.md) |n/a|15m|
+
 
