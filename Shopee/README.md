@@ -16,6 +16,6 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 | Notebook | Score | Runtime |
 | --- | --- | --- | 
-| [EDA One Stop](nb_OneStop.md) |n/a|15m|
+| [EDA One Stop](nb_%20OneStop.md) |n/a|15m|
 
 
