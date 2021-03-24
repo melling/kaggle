@@ -129,9 +129,9 @@ sum(is.na(train$Age))
 # Correlation Plot
 
 We won't look at this now, but a correlation pairs plot can be useful when investigating if data is related.
-
+Excluding the PassengerId to reduce the wasted information.
 ```{r}
-ggpairs(train, binwidth=30)
+ggpairs(select(train, -c(PassengerId)), binwidth=30)
 ```
 
 # Base Accuracy

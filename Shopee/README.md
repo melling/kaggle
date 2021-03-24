@@ -14,8 +14,9 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 # Notebooks Studied
 
-| Notebook | Score | Runtime |
-| --- | --- | --- | 
-| [EDA One Stop](nb_%20OneStop.md) |n/a|15m|
-
-
+| Kaggle | Notes | Score | Runtime |
+| ---    | ---   | ---   | --- |
+| [EDA One Stop](https://www.kaggle.com/ishandutta/v5-shopee-indepth-eda-one-stop-for-all-your-needs) | [Notes](nb_%20OneStop.md) |n/a|15m|
+|[Before We Start EDA](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline) | [Notes](nb_BeforeWeStart.md) | n/a| |
+|[Data understanding and analysis
+](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](Isaienkov.md)|n/a||

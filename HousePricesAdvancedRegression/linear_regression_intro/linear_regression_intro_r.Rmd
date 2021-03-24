@@ -49,8 +49,10 @@ test <- select(test, c("Id", "GrLivArea", "LotArea", "TotalBsmtSF", "YearBuilt")
 
 # Correlation Plot
 ```{r}
-ggpairs(train, binwidth=30)
+ggpairs(select(train, -c(Id)), binwidth=30)
 ```
+
+In this chart, we can verify that SalePrice and GrLivArea are correlated.
 
 # Fit the Linear Model
 
@@ -90,3 +92,6 @@ test %>%
 ```
 
 The Kaggle Score: 0.29117
+
+Generate the file for yourself and submit it [here](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/submit).
+
