@@ -24,6 +24,10 @@ My course [notes](notes)
 - [Escaping the Curse of Dimensionality](https://www.freecodecamp.org/news/the-curse-of-dimensionality-how-we-can-save-big-data-from-itself-d9fa0f872335/)
 - https://statquest.org/video-index/
 
+# Competition Writeups
+
+- https://github.com/psinger/kaggle-landmark-recognition-2020-1st-place
+
 ## Linear Algebra
 
 - http://math.mit.edu/~gs/linearalgebra/
