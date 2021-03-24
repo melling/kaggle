@@ -22,7 +22,8 @@ import hvplot.pandas
 import plotly.express as px
 
 
-https://plotly.com/python/plotly-express/
+- https://plotly.com/python/plotly-express/
+- https://www.kaggle.com/berkayalan/plotly-a-complete-data-visualization-guide/data
 
 ## Number of Images in Each Directory
 
