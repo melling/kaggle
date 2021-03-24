@@ -10,37 +10,43 @@ from PIL import Image
 
 ### hvplot
 
-https://hvplot.holoviz.org
-!pip install hvplot
-import hvplot.pandas
 For pandas plotting
+
+https://hvplot.holoviz.org
+
+import hvplot.pandas
+
 
 ### Plotly 
 
 import plotly.express as px
 
 
+https://plotly.com/python/plotly-express/
+
 ## Number of Images in Each Directory
 
-Number of train images: 32412
-Number of test images:  3
+- Number of train images: 32412
+- Number of test images:  3
 
 https://www.kaggle.com/ishandutta/v5-shopee-indepth-eda-one-stop-for-all-your-needs
 
 # Useful Utility Functions
 
+```python
 def display_multiple_img(images_paths, rows, cols): # shows grid of images
+```
 
 Generate WordCloud from title field
 
 
 # NLP
 
-clean_title
-clean_title_len
-clean_title_word_count
-clean_title_char_count
-clean_title_avg_word_length
+- clean_title
+- clean_title_len
+- clean_title_word_count
+- clean_title_char_count
+- clean_title_avg_word_length
 
 Created Distribution Plots for these new features 
 
