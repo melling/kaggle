@@ -14,5 +14,5 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 # Notebooks Studied
 
-- [EDA One Stop](nb_ OneStop.md)
+- [EDA One Stop](nb_OneStop.md)
 - 
