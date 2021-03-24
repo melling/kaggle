@@ -69,3 +69,36 @@ For any image specific classification, clustering, etc. transforms we'll want to
 
 Scatter plots are a go to to look for clusters and separatbility in the data, but these are busy and don't reveal density well, so we switch to using **2d histograms** instead
 
+# Eigen Images
+
+Commented code at the moment.  Seems to be doing PCA
+
+```python
+from sklearn.decomposition import PCA
+```
+
+# Rudimentary Transforms, Edge Detection, Texture
+
+```python
+import skimage
+from skimage.feature import greycomatrix, greycoprops
+from skimage.filters import sobel
+```
+
+# GLCM Textures
+
+create texture images so we can characterize each pixel by the texture of its neighborhood.
+
+GLCM is inherently anisotropic but can be averaged so as to be rotation invariant. For more on GLCM, see the tutorial.
+
+https://prism.ucalgary.ca/handle/1880/51900
+
+# HSV Transform
+
+HSV is useful for identifying shadows and illumination, as well as giving us a means to identify similar objects that are distinct by color between scenes (hue), though there's no guarantee the hue will be stable.
+
+# Shadow Detection
+
+We can apply a threshold to the V band now to find dark areas that are probably thresholds. Let's look at the distribution of all values then work interactively to find a good filter value.
+
+
