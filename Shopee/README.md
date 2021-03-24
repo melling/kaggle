@@ -10,7 +10,7 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 - There are no empty fields
 - All fields have duplicates, except posting_id
-- 
+- Perceptial Hashing is used: https://en.wikipedia.org/wiki/Perceptual_hashing
 
 # Notebooks Studied
 
