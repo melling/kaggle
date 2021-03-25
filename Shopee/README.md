@@ -7,6 +7,15 @@ Scoring: [F Score](https://en.wikipedia.org/wiki/F-score)
 
 https://www.kaggle.com/c/shopee-product-matching/data
 
+## Fields
+
+- posting_id - the ID code for the posting
+- image - the image id/md5sum
+- image_phash - a perceptual hash of the image
+- title - the product description for the posting
+- label_group - ID code postings that map to the same product. Traing set only.
+
+## Observations
 
 - There are no empty fields
 - All fields have duplicates, except posting_id
