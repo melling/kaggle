@@ -1,14 +1,18 @@
 # Notebook: [Before We Start](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline)
 
-# Overview
+Author: Maksym Shkliarevskyi
+
+## Overview
 
 Uses provided image phash to match exact and close matches.
 
-# PHash
+## PHash
 
 The data has 'phash' values for images, which can greatly simplify our work.
 
 Phash algorithm is really simple. It breaks images into fragments (in our case, the shape is 8x8), then analyzes the image structure on luminance (without color information) and simply assigns True or False depending on the value (above or below the mean). In order to analyze the similarity, it is necessary to subtract one phash matrix from another. Similar fragments will receive a null value (True - True = 0, False - False = 0). The closer the sum of all differences is to zero, the more similar the images are.
+
+### match_matrix()
 
 ```python
 def match_matrix(phash_array):
@@ -19,13 +23,13 @@ def match_matrix(phash_array):
     """
 ```
 
-## Exact Matches
+### Exact Matches
 
 - [11, 12] - image_phash: eab5c295966ac368
 - [889, 890, 891] - image_phash: b6c8c835b1b66e0e
 - [997,520] - image_phash: 89e1f542325be4e9
 
-## Close Matches
+### Close Matches
 
 Phash analysis allows you to find matches. It allows you to find not only exact copies but also approximate ones
 

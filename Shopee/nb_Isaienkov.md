@@ -1,12 +1,14 @@
 # Notebook: [Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis)
 
-# Overview
+Author: Kostiantyn Isaienkov
+
+## Overview
 
 Uses provided image phash to match exact along with exact title match.
 
 Observes products in the same group
 
-# Plot Random Images
+## Plot Random Images
 
 ```python
 def plot_images(images_number):
@@ -33,7 +35,7 @@ def plot_images(images_number):
     plot_images(16)
 ```
 
-# Plot Images by Group
+## Plot Images by Group
 
 ```python
 def plot_images(group):
@@ -70,12 +72,14 @@ sample = train[train['label_group'] == 3627744656]
 print('Total number of items in group 3627744656: ' + str(len(sample)) + ', number of unique titles: ' + str(sample['title'].nunique()))
 ```
 
-# Title Analysis
+## Title Analysis
 
-## Title Length
+### Title Length
 
 ```python
 train['title_len'] = train['title'].str.len()
 ```
 
-# Submission File
+## Submission File
+
+- Assume that the records with exactly the same titles are the same products

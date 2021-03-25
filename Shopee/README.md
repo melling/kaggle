@@ -13,7 +13,7 @@ https://www.kaggle.com/c/shopee-product-matching/data
 - image - the image id/md5sum
 - image_phash - a perceptual hash of the image
 - title - the product description for the posting
-- label_group - ID code postings that map to the same product. Traing set only.
+- label_group - ID code postings that map to the same product. Training set only.
 
 ## Observations
 
