@@ -31,12 +31,20 @@ Change this to False before submitting?
 COMPUTE_CV = True
 ```
 
+## Normalizes Images
+
+L2 Norm
+
+## Cuda Dataframes
+
+cudf
+
 ## Pytorch
 
 - [Pretrained Models](https://www.kaggle.com/pvlima/pretrained-pytorch-models)
 - https://www.kaggle.com/pvlima/use-pretrained-pytorch-models
 
-Upvote the Pretrained Models then **+ Add data** button Data section.
+Upvote the [Pretrained Models](https://www.kaggle.com/pvlima/pretrained-pytorch-models) then **+ Add data** button Data section.
 
 ### Resnet18 Model - A CNN
 

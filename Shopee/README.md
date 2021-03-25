@@ -32,7 +32,7 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 ## Notebooks TODO
 
-- 
+- [II. Shopee: Model Training with Pytorch x RAPIDS](https://www.kaggle.com/andradaolteanu/ii-shopee-model-training-with-pytorch-x-rapids)
 
 ## Discussions
 
