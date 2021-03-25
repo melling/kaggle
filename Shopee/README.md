@@ -3,11 +3,11 @@
 
 Scoring: [F Score](https://en.wikipedia.org/wiki/F-score)
 
-# Data
+## Data
 
 https://www.kaggle.com/c/shopee-product-matching/data
 
-## Fields
+### Fields
 
 - posting_id - the ID code for the posting
 - image - the image id/md5sum
@@ -21,16 +21,26 @@ https://www.kaggle.com/c/shopee-product-matching/data
 - All fields have duplicates, except posting_id
 - Perceptial Hashing is used: https://en.wikipedia.org/wiki/Perceptual_hashing
 
-# Notebooks Studied
+## Notebooks Studied
 
 | Kaggle | Notes | Score | Runtime |
 | ---    | ---   | ---   | --- |
 | [EDA One Stop](https://www.kaggle.com/ishandutta/v5-shopee-indepth-eda-one-stop-for-all-your-needs) | [Notes](nb_%20OneStop.md) |n/a|15m|
 |[Before We Start EDA](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline) | [Notes](nb_BeforeWeStart.md) | 0.595| |
 |[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](nb_Isaienkov.md)|0.573||
-|[Image + Text Baseline](https://www.kaggle.com/finlay/unsupervised-image-text-baseline-in-20min) | [Notes](nb_MaXXX.md)||
+|[Image + Text Baseline](https://www.kaggle.com/finlay/unsupervised-image-text-baseline-in-20min) | [Notes](nb_MaXXX.md)|0.711|755.5|
 
-# Misc
+## Notebooks TODO
+
+- 
+
+## Discussions
+
+- [Embeddings, Cosine Distance, and ArcFace Explained](https://www.kaggle.com/c/shopee-product-matching/discussion/226279)
+- [Techniques Implemented So Far](https://www.kaggle.com/c/shopee-product-matching/discussion/228537)
+- [How To Compute Competition Metric CV](https://www.kaggle.com/c/shopee-product-matching/discussion/225093)
+
+## Misc
 
 - https://analyticsindiamag.com/kaggle-interview-grand-master-christof-henkel/
 - https://github.com/psinger/kaggle-landmark-recognition-2020-1st-place
