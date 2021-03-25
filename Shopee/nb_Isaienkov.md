@@ -1,6 +1,8 @@
 # Notebook: [Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis)
 
-Author: Kostiantyn Isaienkov
+- Author: Kostiantyn Isaienkov
+- Score: 0.573
+- GPU: No
 
 ## Overview
 
@@ -83,3 +85,12 @@ train['title_len'] = train['title'].str.len()
 ## Submission File
 
 - Assume that the records with exactly the same titles are the same products
+
+## Submits the Sample file?
+
+```
+posting_id,matches
+test_3588702337,test_3588702337
+test_2255846744,test_2255846744
+test_4015706929,test_4015706929
+```

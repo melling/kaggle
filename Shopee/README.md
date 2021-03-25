@@ -27,7 +27,8 @@ https://www.kaggle.com/c/shopee-product-matching/data
 | ---    | ---   | ---   | --- |
 | [EDA One Stop](https://www.kaggle.com/ishandutta/v5-shopee-indepth-eda-one-stop-for-all-your-needs) | [Notes](nb_%20OneStop.md) |n/a|15m|
 |[Before We Start EDA](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline) | [Notes](nb_BeforeWeStart.md) | 0.595| |
-|[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](Isaienkov.md)|0.573||
+|[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](nb_Isaienkov.md)|0.573||
+|[Image + Text Baseline](https://www.kaggle.com/finlay/unsupervised-image-text-baseline-in-20min) | [Notes](nb_MaXXX.md)||
 
 # Misc
 

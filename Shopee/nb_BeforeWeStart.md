@@ -1,6 +1,8 @@
 # Notebook: [Before We Start](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline)
 
-Author: Maksym Shkliarevskyi
+- Author: Maksym Shkliarevskyi
+- Score: 0.595
+- GPU: No
 
 ## Overview
 
