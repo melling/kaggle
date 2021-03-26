@@ -29,6 +29,7 @@ https://www.kaggle.com/c/shopee-product-matching/data
 |[Before We Start EDA](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline) | [Notes](nb_BeforeWeStart.md) | 0.595| |
 |[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](nb_Isaienkov.md)|0.573||
 |[Image + Text Baseline](https://www.kaggle.com/finlay/unsupervised-image-text-baseline-in-20min) | [Notes](nb_MaXXX.md)|0.711|755.5|
+|[Unsupervised Baseline ArcFace](https://www.kaggle.com/ragnar123/unsupervised-baseline-arcface)|[Notes](nb_ragnar_arcface.md)|0.720|929.3 s|
 
 ## Notebooks TODO
 
