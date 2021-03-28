@@ -11,9 +11,9 @@ See also: https://www.kaggle.com/slawekbiel/arcface-explained
 
 Read this notebook first to get more detail: https://www.kaggle.com/cdeotte/part-2-rapids-tfidfvectorizer-cv-0-700
 
-## 
+## Arcmarginproduct class keras layer (Cell 4)
 
-# Arcmarginproduct class keras layer
+Lot of code here
 
 ```python
 class ArcMarginProduct(tf.keras.layers.Layer):
