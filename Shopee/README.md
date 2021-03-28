@@ -32,17 +32,15 @@ https://www.kaggle.com/c/shopee-product-matching/data
 |[Unsupervised Baseline ArcFace](https://www.kaggle.com/ragnar123/unsupervised-baseline-arcface)|[Notes](nb_ragnar_arcface.md)|0.720|929.3 s|
 | [[PART 2] - RAPIDS TfidfVectorizer - [CV 0.700]](https://www.kaggle.com/cdeotte/part-2-rapids-tfidfvectorizer-cv-0-700)| [Notes](nb_rapids_tfidfvectorizer.md)| 0.700|429.3 s|
 
-
-
 ## Notebooks TODO
 
 - [II. Shopee: Model Training with Pytorch x RAPIDS](https://www.kaggle.com/andradaolteanu/ii-shopee-model-training-with-pytorch-x-rapids)
 
 ## Discussions
 
-- [Embeddings, Cosine Distance, and ArcFace Explained](https://www.kaggle.com/c/shopee-product-matching/discussion/226279)
-- [Techniques Implemented So Far](https://www.kaggle.com/c/shopee-product-matching/discussion/228537)
-- [How To Compute Competition Metric CV](https://www.kaggle.com/c/shopee-product-matching/discussion/225093)
+- [Embeddings, Cosine Distance, and ArcFace Explained](https://www.kaggle.com/c/shopee-product-matching/discussion/226279) - Chris Deotte
+- [Techniques Implemented So Far](https://www.kaggle.com/c/shopee-product-matching/discussion/228537) - ragnar
+- [How To Compute Competition Metric CV](https://www.kaggle.com/c/shopee-product-matching/discussion/225093) - Chris Deotte
 
 ## Misc
 
