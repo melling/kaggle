@@ -23,8 +23,8 @@ https://www.kaggle.com/c/shopee-product-matching/data
 
 ## Notebooks Studied
 
-| Kaggle | Notes | Score | Runtime |
-| ---    | ---   | ---   | --- |
+| Kaggle | Author | Notes | Score | Runtime |
+| ---    | ---  | ---  | ---   | --- |
 | [EDA One Stop](https://www.kaggle.com/ishandutta/v5-shopee-indepth-eda-one-stop-for-all-your-needs) |Ishan Dutta (Expert) | [Notes](nb_OneStop.md) |n/a|15m|
 |[Before We Start EDA](https://www.kaggle.com/maksymshkliarevskyi/shopee-before-we-start-eda-phash-baseline) | Maksym Shkliarevskyi (Expert)| [Notes](nb_BeforeWeStart.md) | 0.595| |
 |[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | Kostiantyn Isaienkov (GM)| [Notes](nb_Isaienkov.md)|0.573||
