@@ -30,6 +30,9 @@ https://www.kaggle.com/c/shopee-product-matching/data
 |[Data understanding and analysis](https://www.kaggle.com/isaienkov/shopee-data-understanding-and-analysis) | [Notes](nb_Isaienkov.md)|0.573||
 |[Image + Text Baseline](https://www.kaggle.com/finlay/unsupervised-image-text-baseline-in-20min) | [Notes](nb_MaXXX.md)|0.711|755.5|
 |[Unsupervised Baseline ArcFace](https://www.kaggle.com/ragnar123/unsupervised-baseline-arcface)|[Notes](nb_ragnar_arcface.md)|0.720|929.3 s|
+| [[PART 2] - RAPIDS TfidfVectorizer - [CV 0.700]](https://www.kaggle.com/cdeotte/part-2-rapids-tfidfvectorizer-cv-0-700)| [Notes](nb_rapids_tfidfvectorizer.md)| 0.700|429.3 s|
+
+
 
 ## Notebooks TODO
 
