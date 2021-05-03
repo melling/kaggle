@@ -1,6 +1,5 @@
 # [Shopee](https://www.kaggle.com/c/shopee-product-matching)
 
-
 Scoring: [F Score](https://en.wikipedia.org/wiki/F-score)
 
 ## Data
