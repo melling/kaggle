@@ -41,6 +41,16 @@ https://www.kaggle.com/c/shopee-product-matching/data
 - [Techniques Implemented So Far](https://www.kaggle.com/c/shopee-product-matching/discussion/228537) - ragnar
 - [How To Compute Competition Metric CV](https://www.kaggle.com/c/shopee-product-matching/discussion/225093) - Chris Deotte
 
+# Papers
+
+- [ArcFace: Additive Angular Margin Loss for Deep Face Recognition
+](https://arxiv.org/abs/1801.07698)
+- [DeepFace: Closing the Gap to Human-Level Performance in Face Verification](https://www.cs.toronto.edu/~ranzato/publications/taigman_cvpr14.pdf)
+
+## Terms
+
+- OOF - out-of-fold (OOF) predictions - The predictions generated this way are called out-of-fold (OOF) predictions.
+- CV - Cross-Validated Results
 ## Misc
 
 - https://analyticsindiamag.com/kaggle-interview-grand-master-christof-henkel/
